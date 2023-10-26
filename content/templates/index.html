@@ -1,0 +1,334 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container-fluid px-0">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark shadow bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <span class="material-icons-outlined me-1">important_devices</span>
+            Tracy Atieno
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container px-3">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#services">services</a>
+                  <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!--      begin homepage-->
+     <header id="home" class="bg-dark py-5">
+        <div class="container px-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+              <div class="my-5">
+                <h2 class="text-center fw-bold mb-2 text-light">Hi! I am Tracy Atieno,</h2>
+                <h2 class="text-primary text-center fw-bold mb-2">A full-stack web developer</h2>
+                <p class="lead text-muted mb-4">
+                  I specialize in building web applications using bootstrap for frontend,
+                  Django and python. Scroll down to see what I have been working on.
+                </p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                  <a class="btn btn-primary btn-large text-uppercase" href="#about">
+                    Learn More
+                    <span class="material-icons-outlined ms-2">help_outline</span>
+                  </a>
+                  <a class="btn btn-outline-primary btn-large text-uppercase" href="services.html">
+                    What Tracy does
+                    <span class="material-icons-outlined ms-2">manage_search</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 justify-content-center">
+                <img src=" {% static 'images/t.dev.jpeg' %}" alt="t.dev">
+{#              <img class="img-fluid rounded-3 my-5" src="images/t.dev.jpeg" alt="t.dev">#}
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+<!--      end homepage-->
+
+ <main>
+        <!-- About -->
+        <section class="bg-light text-dark text-center py-5" id="about" >
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">About</h2>
+              <p class="lead text-muted mb-5">
+                I am a dedicated and creative web developer with a deep passion for crafting exceptional digital experiences
+                  using Django,python and bootstrap.
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">palette</span>
+                </div>
+
+                <h5>Bootstrap</h5>
+                <p class="text-muted text-dark text-centre mb-0">
+                 Bootstrap, my preferred front-end framework, champions a mobile-first approach for crafting web applications that
+                    look great on all devices. Its emphasis on consistency streamlines visual design, making projects more user-friendly.
+                </p>
+
+              </div>
+
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">code</span>
+                </div>
+
+                <h5>python</h5>
+                <p class="text-dark mb-0">
+                 I leverage Python's versatility for my coding needs.
+                    This language's simplicity and readability make it a top choice for a wide range of projects,
+                    from web development to data analysis and more.
+                </p>
+              </div>
+
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">code</span>
+                </div>
+                <h5>Django</h5>
+                <p class="text-muted mb-0">
+                  I rely on Django for my web projects. It's a versatile Python framework known for its simplicity and robust features.
+                    With a strong focus on security and best practices, it enables me to build and maintain a wide range of web applications,
+                    from blogs to e-commerce platforms, while keeping code clean and secure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About -->
+
+     <hr>
+
+     <!-- services-->
+        <section id="services" class="text-center bg-dark text-light  py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Services</h2>
+              <p class="lead text-muted mb-5">View what i do</p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/slider.jpg" alt="services">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Design</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">Django</div>
+                      <div class="badge bg-primary rounded-pill">Python</div>
+                      <div class="badge bg-primary rounded-pill">bootstrap</div>
+                    </div>
+                    <p class="card-text text-muted mb-0">
+
+                      I create beautiful, modern designs optimized for multiple
+                      color modes (light and dark themes).
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                  <span class="material-icons-outlined m-auto text-primary">palette</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/slider.jpg" alt="Project 2">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Development</h5>
+                    <div class="mb-2">
+                       <div class="badge bg-primary rounded-pill">Django</div>
+                      <div class="badge bg-primary rounded-pill">Python</div>
+                      <div class="badge bg-primary rounded-pill">bootstrap</div>
+                    </div>
+                    <p class="card-text">
+                      <p class="text-muted mb-0">
+                  I develop responsive, scalable, and fast applications using
+                  the best standards and coding practices.
+                </p>
+
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+
+                      <span class="material-icons-outlined m-auto text-primary">code</span>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/slider.jpg" alt="services">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Launch & Maintenance</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">Django</div>
+                      <div class="badge bg-primary rounded-pill">Python</div>
+                      <div class="badge bg-primary rounded-pill">Bootstrap</div>
+                    </div>
+                    <p class="card-text text-muted mb-0">
+                   Once the application is ready, I will help you launch it and
+                  teach you how to update and maintain it
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3"><span class="material-icons-outlined m-auto text-primary">settings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End services-->
+
+
+        <!-- Contact -->
+        <section id="contact" class="text-center bg-light text-dark py-5">
+          <div class="container text-light py-5">
+            <div class="row justify-content-center">
+
+              <h2 class="fw-bold text-light text-muted" >Contact</h2>
+              <p class="lead text-muted mb-5">
+                Do you need a full-stack web developer? I would love to hear
+                from you.
+              </p>
+
+
+                <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-primary text-light ">
+
+              <div class="mb-2">
+
+                 <h6 class="text-uppercase mb-2 fw-bold mt-3 mb=3">GET IN TOUCH</h6>
+                 <h6 class="text-uppercase mb-2">Address</h6>
+                 <p class="lead mb-0">Nairobi,Kenya</p>
+              </div>
+
+              <div class="mb-2">
+                <h6 class="text-uppercase mb-2">Phone</h6>
+                <p class="lead mb-0">+254-757-57-44-07</p>
+              </div>
+
+              <div class="mb-2">
+                <h6 class="text-uppercase mb-2">Email</h6>
+                <p class="lead mb-0">tracyatieno10@gmail.com</p>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-xl-5 col-xxl-6 mb-5">
+                        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254861.90243195955!2d39.89663589999999!3d-3.53726925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x183fdd0b09499467%3A0xf32195f25a65f294!2sKilifi!5e0!3m2!1sen!2ske!4v1697383934152!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
+
+                    <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
+
+
+
+                    <div class="row g-3">
+
+                        <div class="col mb-5">
+                            <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                        </div>
+
+                        <div class="col mb-5">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                        </div>
+                        </div>
+
+                        <div class="row g-3">
+                          <div class="col mb-5">
+                            <input type="number" class="form-control rounded" placeholder="Phone" aria-label="Phone">
+                          </div>
+
+                          <div class="col mb-5">
+                            <input type="text" class="form-control rounded" placeholder="Address" aria-label="Address">
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Leave me a message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-12 mb 5">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+
+
+</div>
+
+        </section>
+        <!-- End Contact -->
+ </main>
+
+
+    <hr>
+
+ <!-- Footer -->
+    <footer class="text-center bg-dark text-light py-4 ">
+      <div class="container px-5 mb-2">Copyright &copy; 2023 Tracy's portfolio.</div>
+    </footer>
+    <!-- End Footer -->
+
+
+</body>
+</html>
